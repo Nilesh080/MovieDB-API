@@ -1,19 +1,19 @@
 ✅ Features Implemented
 📦 Repository Layer & Data Access
-🔁 Built a Generic BaseRepository<T> to support reusable CRUD operations across all entities.
+  🔁 Built a Generic BaseRepository<T> to support reusable CRUD operations across all entities.
 
-💡 Used Dapper ORM for fast, efficient, and lightweight database querying.
+  💡 Used Dapper ORM for fast, efficient, and lightweight database querying.
 
-✅ All SQL queries follow best practices and proper formatting conventions.
+  ✅ All SQL queries follow best practices and proper formatting conventions.
 
 🧩 Stored Procedures
-🛠 Implemented and integrated usp_AddMovie and usp_UpdateMovie stored procedures to:
+  🛠 Implemented and integrated usp_AddMovie and usp_UpdateMovie stored procedures to:
 
-Insert/update movie details with related entities.
+    Insert/update movie details with related entities.
 
-Map many-to-many relationships: Movie-Actor and Movie-Genre using intermediate tables (ActorMovie, GenreMovie).
+    Map many-to-many relationships: Movie-Actor and Movie-Genre using intermediate tables (ActorMovie, GenreMovie).
 
-Used SCOPE_IDENTITY() to get the inserted MovieId and STRING_SPLIT() to handle actor/genre ID lists.
+    Used SCOPE_IDENTITY() to get the inserted MovieId and STRING_SPLIT() to handle actor/genre ID lists.
 
 🎬 Entity-wise API & Controller Coverage
 🎥 Movies

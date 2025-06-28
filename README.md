@@ -1,23 +1,22 @@
 ✅ Features Implemented
 📦 Repository Layer & Data Access
-  🔁 Built a Generic BaseRepository<T> to support reusable CRUD operations across all entities.
+🔁 Built a Generic BaseRepository<T> to support reusable CRUD operations across all entities.
 
-  💡 Used Dapper ORM for fast, efficient, and lightweight database querying.
+💡 Used Dapper ORM for fast, efficient, and lightweight database querying.
 
-  ✅ All SQL queries follow best practices and proper formatting conventions.
+✅ All SQL queries follow best practices and proper formatting conventions.
 
 🧩 Stored Procedures
-  🛠 Implemented and integrated usp_AddMovie and usp_UpdateMovie stored procedures to:
+🛠 Implemented and integrated usp_AddMovie and usp_UpdateMovie stored procedures to:
 
-    Insert/update movie details with related entities.
+Insert/update movie details with related entities.
 
-    Map many-to-many relationships: Movie-Actor and Movie-Genre using intermediate tables (ActorMovie, GenreMovie).
+Map many-to-many relationships: Movie-Actor and Movie-Genre using intermediate tables (ActorMovie, GenreMovie).
 
-    Used SCOPE_IDENTITY() to get the inserted MovieId and STRING_SPLIT() to handle actor/genre ID lists.
+Used SCOPE_IDENTITY() to get the inserted MovieId and STRING_SPLIT() to handle actor/genre ID lists.
 
 🎬 Entity-wise API & Controller Coverage
 🎥 Movies
-
 Full CRUD operations.
 
 Add/update with actor/genre mapping using stored procedures.
@@ -25,31 +24,26 @@ Add/update with actor/genre mapping using stored procedures.
 Poster upload functionality using Supabase.
 
 🧑‍🎤 Actors
-
 Add, update, delete, fetch all, fetch by ID.
 
 Connected to movies via mapping table.
 
 🎭 Genres
-
 CRUD APIs to manage genre types.
 
 Used for categorizing movies.
 
 🎬 Producers
-
 Manage producer profiles.
 
 CRUD support with date of birth and bio.
 
 💬 Reviews
-
 Add or fetch reviews related to a movie.
 
 Enables user feedback/comment system.
 
 👤 Users
-
 Signup and login endpoints with password hashing.
 
 JWT-based authentication.
@@ -64,7 +58,7 @@ Role-based protection for authorized endpoints.
 🧾 Implementation follows the official Supabase C# SDK.
 
 🔐 Authentication & Security
-🔐 JWT authentication implemented for secure access.
+🔐 Implemented JWT authentication for secure access.
 
 🔑 Users must log in to get a token for accessing protected routes.
 
@@ -77,4 +71,4 @@ Role-based protection for authorized endpoints.
 
 📌 Consistent naming conventions and folder structure.
 
-🧠 Proper async/await usage and connection handling for better performance.
+🧠 Proper use of async/await and efficient connection management.

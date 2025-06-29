@@ -38,6 +38,7 @@ Connected Services/
 # Don't track local config secrets or dev-specific settings
 appsettings.Development.json
 appsettings.Local.json
+appsettings.json
 
 # NuGet
 *.nupkg
